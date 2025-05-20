@@ -45,8 +45,9 @@
 
       try {
         const response = await fetch(
-          `https://script.google.com/macros/s/AKfycbz9Z5wROkhjssvAE_aqIGWnybRNdoJYUybNLh8b5zOkU1RdgT6PTQivga4grnPZHMCjmg/exec?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
-        );
+  `https://script.google.com/macros/s/AKfycbyGWInrY3YzpDZxJE0Gh5u6UECoDQni7gW95Tj-qDtvoPLfEfpoAZphY46HAKrO5PYJMg/exec?username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
+);
+
         const text = await response.text();
 
         if (response.ok) {
